@@ -34,7 +34,7 @@
 %%--------------------------------------------------------------------
 
 start(_StartType, _StartArgs) ->
-    case ecrn_sup:start_link() of
+    case erlcron_sup:start_link() of
         {ok, Pid} ->
             {ok, Pid};
         Error ->
